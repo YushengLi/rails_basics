@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get 'home', 'contact', 'faq', 'math', 'form', 'about', controller: :post
 
+  get 'about', to: 'pages#about'
+
   post 'pages/about', 'about', to: 'pages#about'
 
 
