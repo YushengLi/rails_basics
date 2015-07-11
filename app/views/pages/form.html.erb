@@ -1,0 +1,7 @@
+<%= form_tag '/about', method: :post do %>
+  <%= text_field_tag :nickname %>  
+  <%= text_field_tag :height %>
+  <%= text_field_tag :weight %>
+  <%= token_tag %>
+  <%= submit_tag %>
+<% end %>

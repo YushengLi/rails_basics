@@ -3,6 +3,11 @@ class PagesController < ApplicationController
   end
 
   def about
+    @height = params[:height].to_f
+    @name   = params[:nickname]
+    @weight = params[:weight].to_f
+
+    @bmi    = @weight/(@height**2)
   end
 
   def contact
@@ -13,5 +18,8 @@ class PagesController < ApplicationController
 
   def math
     render 'pages/math'
+  end
+
+  def form
   end
 end

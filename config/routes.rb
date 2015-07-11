@@ -2,15 +2,10 @@ Rails.application.routes.draw do
   
   root 'pages#home'
 
-  get 'math', to: 'pages#math'
+  get 'home', 'contact', 'faq', 'math', 'form', 'about', controller: :post
 
-  get 'pages/home'
+  post 'pages/about', 'about', to: 'pages#about'
 
-  post 'pages/about'
-
-  get 'pages/contact'
-
-  get 'pages/faq'
 
   get 'lottery', to: 'lottery#show'
 
