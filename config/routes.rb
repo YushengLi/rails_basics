@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get 'pages/home'
 
-  get 'pages/about'
+  post 'pages/about'
 
   get 'pages/contact'
 

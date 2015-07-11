@@ -2,7 +2,8 @@
 <p>Find me in app/views/pages/home.html.erb</p>
 
 
-<form action="/pages/about">
+<form action="/pages/about" method="post">
   <input type="text" name="nickname">
+  <%= token_tag %>
   <button type="submit">about</button>
 </form>
