@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
   root 'pages#home'
 
-  get 'home', 'contact', 'faq', 'math', 'form', 'about', controller: :post
+  get 'home', 'contact', 'faq', 'math', 'form', 'about', controller: :pages
 
   get 'about', to: 'pages#about', path: 'about-me'
 
