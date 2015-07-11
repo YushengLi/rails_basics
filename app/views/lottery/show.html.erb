@@ -1,0 +1,8 @@
+<h1>Lottery</h1>
+<ul>
+  <%# i = 1 %>
+  <% (1..42).to_a.sample(6).each_with_index do |num, i| %>
+    <li>Ball No.<%= i+1 %>: <%= num %></li>
+    <%# i += 1 %>
+  <% end %>  
+</ul>
