@@ -8,6 +8,6 @@ class Post < ActiveRecord::Base
       self.content = title if content.blank?
     end 
     def upcase_title
-      self.title.upcase!
+      self.title.try(:upcase!)
     end
 end
