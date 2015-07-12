@@ -1,6 +1,6 @@
 <ul class="nav">
   <%= nav_li 'Home', home_path %>
-  <%= nav_li 'About', about_path %>
+  <%= nav_li 'About', about_path(nickman: 'Bill', weight: 65, height: 1.65), method: :post, data: {confirm: 'Are you sure?'} %>
   <%= nav_li 'Contact', contact_path %>
   <%= nav_li 'Form', form_path %>
   <%= nav_li 'Faq', faq_path %>
