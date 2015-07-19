@@ -1,7 +1,7 @@
 <%= form_tag posts_path do %>
-  <%= label_tag :title %>
-  <%= text_field_tag :title %>
-  <%= label_tag :content %>
-  <%= text_field_tag :content %>
+  <%= label_tag 'post[title]', 'Title' %>
+  <%= text_field_tag 'post[title]' %>
+  <%= label_tag 'post[content]', 'Content' %>
+  <%= text_field_tag 'post[content]' %>
   <%= submit_tag %>
 <% end %>
