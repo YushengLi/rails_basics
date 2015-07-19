@@ -8,7 +8,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new({
-      title: params[:title]
+      title: params[:title],
       content: params[:content]
     })
     if @post.save
