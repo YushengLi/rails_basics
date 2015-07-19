@@ -7,7 +7,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new params[:post].to_hash
+    @post = Post.new params.require(:post).permit(:title, :content)
     # @post = Post.new({
     #   title: params[:title],
     #   content: params[:content]
